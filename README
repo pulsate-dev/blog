@@ -1,0 +1,9 @@
+# Pulsate Blog
+
+Pulsate Project に関する情報を発信するためのブログ.
+
+## Add a new post
+
+1. ブランチを切る
+2. `posts/` に新しい Markdown ファイルを作成する. `{date}-{post_title}.md` (`%Y-%m-%d`) の形式で作成します. `deno task create` でテンプレートをコピーすることもできます.
+3. 

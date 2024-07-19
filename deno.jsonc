@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --watch main.ts --dev",
+    "serve": "deno run --allow-net --allow-read --allow-env --no-check main.ts",
+    "create": "cp template.md posts/$(date + '%Y-%m-%d')-post-title.md",
+    "fmt": "deno fmt .",
+    "fmt:check": "deno fmt --check .",
+    "lint": "deno lint"
+  },
+  "imports": {
+    "deno_blog": "https://deno.land/x/blog@0.7.0/blog.tsx"
+  }
+}
