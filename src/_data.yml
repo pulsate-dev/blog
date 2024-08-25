@@ -1,0 +1,16 @@
+lang: en
+
+home:
+  welcome: Updates from the Pulsate team
+
+menu_links:
+  - text: Release Notes
+    href: /archive/release/
+extra_head: []
+
+# Metas plugin https://lume.land/plugins/metas/#description
+metas:
+  site: Pulsate Blog
+  title: "=title"
+  description: "=intro.text"
+  lang: ja
