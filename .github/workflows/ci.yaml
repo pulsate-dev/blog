@@ -25,3 +25,7 @@ jobs:
       - name: Run lint
         run: |
           deno task lint
+
+      - name: Run build
+        run: |
+          deno task build

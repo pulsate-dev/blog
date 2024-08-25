@@ -1,4 +1,4 @@
-name: ci
+name: Deploy
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,9 +20,13 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
+      
+      - name: Build
+        run: deno task build
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: pulsate-blog
-          entrypoint: main.ts
+          entrypoint: serve.ts
+          import-map: "./deno.jsonc"
