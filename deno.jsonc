@@ -8,8 +8,8 @@
     "lint": "deno lint"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.2.4/",
-    "blog/": "https://deno.land/x/lume_theme_simple_blog@v0.15.5/"
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@v3.2.2/",
+    "blog/": "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/"
   },
   "compilerOptions": {
     "types": [
