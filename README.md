@@ -23,12 +23,12 @@ Pulsate の開発情報などを発信するブログ.
 ```markdown
 ---
 title: The example post
-date: '2023-09-10'
+date: "2023-09-10"
 author: Sho Sakuma
 tags:
   - ActivityPub
 comments:
-  src: 'https://mstdn.mand.io/@m1sk9/0000000'
+  src: "https://mstdn.mand.io/@m1sk9/0000000"
 draft: true
 ---
 ```
