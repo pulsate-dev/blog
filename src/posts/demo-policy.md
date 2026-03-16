@@ -7,10 +7,6 @@ tags:
   - Demonstration
 ---
 
-# Pulsate デモインスタンス　運営・運用ポリシー
-
-laminne, 2026 03.01
-
 ## 運営方針
 
 - 登録は解放する
