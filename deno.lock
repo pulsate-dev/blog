@@ -19,6 +19,7 @@
     "jsr:@std/html@^1.0.5": "1.0.5",
     "jsr:@std/http@1.0.25": "1.0.25",
     "jsr:@std/internal@^1.0.12": "1.0.12",
+    "jsr:@std/json@^1.0.2": "1.0.3",
     "jsr:@std/jsonc@1.0.2": "1.0.2",
     "jsr:@std/media-types@^1.1.0": "1.1.0",
     "jsr:@std/net@^1.0.6": "1.0.6",
@@ -125,8 +126,14 @@
     "@std/internal@1.0.12": {
       "integrity": "972a634fd5bc34b242024402972cd5143eac68d8dffaca5eaa4dba30ce17b027"
     },
+    "@std/json@1.0.3": {
+      "integrity": "97d5710996293a027b7aa5f0d1f4fa29f246f269e6b5597e08807613f37d426c"
+    },
     "@std/jsonc@1.0.2": {
-      "integrity": "909605dae3af22bd75b1cbda8d64a32cf1fd2cf6efa3f9e224aba6d22c0f44c7"
+      "integrity": "909605dae3af22bd75b1cbda8d64a32cf1fd2cf6efa3f9e224aba6d22c0f44c7",
+      "dependencies": [
+        "jsr:@std/json"
+      ]
     },
     "@std/media-types@1.1.0": {
       "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
@@ -649,6 +656,7 @@
     "https://cdn.jsdelivr.net/gh/b-fuze/deno-dom@0.1.56/src/dom/utils-types.ts": "96db30e3e4a75b194201bb9fa30988215da7f91b380fca6a5143e51ece2a8436",
     "https://cdn.jsdelivr.net/gh/b-fuze/deno-dom@0.1.56/src/dom/utils.ts": "bc429635e9204051ba1ecc1b212031b5ee7c6bcd95120c91bef696804aa67e74",
     "https://cdn.jsdelivr.net/gh/b-fuze/deno-dom@0.1.56/src/parser.ts": "e06b2300d693e6ae7564e53dfa5c9a9e97fdb8c044c39c52c8b93b5d60860be3",
+    "https://cdn.jsdelivr.net/gh/lumeland/bar@0.1.14/types.ts": "38f3714e1432c174009495333972f85fb306eb6313112ac8830fda9f1f47e87f",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@v3.2.2/cli.ts": "d8fc878eb1d52c85d5778ec2965d7c0084a351c90741c5f629e24c16e8b53ba5",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@v3.2.2/cli/build.ts": "61290fc7d533f605d4d96a258775b50006f07b769346451d3d63abd883b9342f",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@v3.2.2/cli/build_worker.ts": "3916e44a3c3f99a4c1dfcb6e5cc0f4c050ded09f8b075cfef186ceec6ff171bf",
@@ -772,8 +780,10 @@
     "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/plugins.ts": "092a7b277bbd3a7253bfcbca109b7a136a1342ba6869770aac9977e26d8d6107",
     "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/src/archive.page.js": "ba3e27af57b7134120e6da6c7148bcb62517ff2521a7cd09f7aa252acd472423",
     "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/src/archive.page.js#1773413135493": "ba3e27af57b7134120e6da6c7148bcb62517ff2521a7cd09f7aa252acd472423",
+    "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/src/archive.page.js#1773662100745": "ba3e27af57b7134120e6da6c7148bcb62517ff2521a7cd09f7aa252acd472423",
     "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/src/archive_result.page.js": "a58c983e03b20c37e8f94e0383f940c858e9e9255685409a216f83c13fbaf43e",
     "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/src/archive_result.page.js#1773413135492": "a58c983e03b20c37e8f94e0383f940c858e9e9255685409a216f83c13fbaf43e",
+    "https://cdn.jsdelivr.net/gh/lumeland/theme-simple-blog@v1.16.2/src/archive_result.page.js#1773662100743": "a58c983e03b20c37e8f94e0383f940c858e9e9255685409a216f83c13fbaf43e",
     "https://cdn.jsdelivr.net/gh/ventojs/vento@2.3.1/core/environment.ts": "db44bd90da767fd35c735261badc5a060b581d0ef22231945d16ec0fea110d8b",
     "https://cdn.jsdelivr.net/gh/ventojs/vento@2.3.1/core/errors.ts": "8606b682b465d598a394feea135dd2f84033b5ef2a61a23d116ccb782a0a547a",
     "https://cdn.jsdelivr.net/gh/ventojs/vento@2.3.1/core/js.ts": "83084240150d7e8b83e43ec8fcf78564a8ba8599c3d517976efbb11b208903b2",
