@@ -6,7 +6,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  id-token: write
   contents: read
 
 jobs:
@@ -14,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup deno
         uses: denoland/setup-deno@v2
@@ -24,9 +23,8 @@ jobs:
       - name: Build
         run: deno task build
 
-      - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v4
         with:
-          project: pulsate-blog
-          entrypoint: serve.ts
-          import-map: "./deno.jsonc"
+          accountId: ${{ secrets.CLOUDFARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFARE_API_TOKEN }}
