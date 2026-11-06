@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "blog",
+  "compatibility_date": "2026-09-21",
+  "assets": {
+    "directory": "./_site/",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "blog.pulsate.dev", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false
+}
